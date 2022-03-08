@@ -1,6 +1,7 @@
 const express = require('express');
 const repuestos = require('./repuestos');
 const mecanicos = require('./mecanicos');
+const admin = require('./admin');
 
 const router = express.Router();
 
@@ -14,5 +15,6 @@ router.get('/', (req, res) => {
 // Demás rutas
 router.use('/repuestos', repuestos);
 router.use('/mecanicos', mecanicos);
+router.use('/admin', admin);
 
 module.exports = router;

@@ -1,0 +1,42 @@
+<div class='container mt-5'>
+	<h2 class='text-center'>PANEL DE MECÁNICO</h2>
+	<div class='col-12 d-flex'>
+		<div class='col-6'>
+			<form action='formMecanicos' method='post' class='m-5'>
+				<div class='mb-3'>
+					<label for='name' class='form-label'>
+						Nombres:
+					</label>
+					<input type='text' class='form-control' id='name' name='nombre' />
+				</div>
+				<div class='mb-3'>
+					<label for='lastname' class='form-label'>
+						Apellidos:
+					</label>
+					<input
+						type='text'
+						class='form-control'
+						id='lastname'
+						name='apellido'
+					/>
+				</div>
+				<div class='d-flex justify-content-around mt-5'>
+					<button type='submit' class='btn btn-primary'>
+						Agregar
+					</button>
+					<a href='../admin' class='btn btn-secondary'>Salir</a>
+				</div>
+			</form>
+		</div>
+
+		<div class='col-6'>
+			<h4 class='text-center'>Lista Mecánicos</h4>
+			{{#each documentos}}
+				<div class='alert alert-secondary'>
+					{{this.nombre}}
+					{{this.apellido}}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

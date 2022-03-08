@@ -16,16 +16,17 @@ repuestos.get('/:id', async (req, res) => {
 });
 
 // Enviar datos
-// repuestos.post('/', async (req, res) => {
-// 	const documento = new modeloRepuestos({
-// 		codigo: 'D1661-SM',
-// 		descripcion: 'Pastillas de freno',
-// 		costo: '10.5',
-// 	});
-// 	await documento.save();
+repuestos.post('/', async (req, res) => {
+	console.log(req.body);
+	// const documento = new modeloRepuestos({
+	// 	codigo: 'D1661-SM',
+	// 	descripcion: 'Pastillas de freno',
+	// 	costo: '10.5',
+	// });
+	// await documento.save();
 
-// 	res.json({ status: 'Guardado' });
-// });
+	// res.json({ status: 'Guardado' });
+});
 
 // Eliminar datos
 // repuestos.delete('/:id', async (req, res) => {

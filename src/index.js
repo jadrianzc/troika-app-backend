@@ -9,7 +9,5 @@ if (process.env.NODE_ENV !== 'production') {
 	require('dotenv').config();
 }
 
-const port = process.env.PORT || 4000;
-
 // Iniciar el servidor
-server.initServer(port);
+server.initServer();
