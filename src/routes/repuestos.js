@@ -2,7 +2,7 @@ const express = require('express');
 const repuestos = express.Router();
 const modeloRepuestos = require('../models/ModeloRepuestos');
 
-////////////////////////////////////////////////////// REPUESTOS /////////////////////////////////////////
+////////////////////////////////////////////////////// REPUESTOS //////////////////////////////////////////////////////
 
 // Obetener datos
 repuestos.get('/', async (req, res) => {
@@ -16,17 +16,17 @@ repuestos.get('/:id', async (req, res) => {
 });
 
 // Enviar datos
-repuestos.post('/', async (req, res) => {
-	console.log(req.body);
-	// const documento = new modeloRepuestos({
-	// 	codigo: 'D1661-SM',
-	// 	descripcion: 'Pastillas de freno',
-	// 	costo: '10.5',
-	// });
-	// await documento.save();
+// repuestos.post('/', async (req, res) => {
+// 	console.log(req.body);
+// 	// const documento = new modeloRepuestos({
+// 	// 	codigo: 'D1661-SM',
+// 	// 	descripcion: 'Pastillas de freno',
+// 	// 	costo: '10.5',
+// 	// });
+// 	// await documento.save();
 
-	// res.json({ status: 'Guardado' });
-});
+// 	// res.json({ status: 'Guardado' });
+// });
 
 // Eliminar datos
 // repuestos.delete('/:id', async (req, res) => {

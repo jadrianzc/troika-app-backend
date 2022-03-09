@@ -1,16 +1,10 @@
 <div class='container mt-5'>
 	<h2 class='text-center'>CREACIÓN DE REPUESTOS</h2>
-	<form action='' method='post' class='m-5'>
+	<form action='formRepuestos' method='post' class='m-5'>
 		<div class='col-12 d-flex justify-content-center'>
 			<div class='col-4'>
 				<div class='form-floating mb-3'>
-					<input
-						type='text'
-						class='form-control'
-						id='cod'
-						name='codigo'
-						placeholder='Código'
-					/>
+					<input type='text' class='form-control' id='cod' name='codigo' placeholder='Código' autocomplete='off' />
 					<label for='cod'>
 						Código
 					</label>
@@ -21,8 +15,9 @@
 						type='text'
 						class='form-control'
 						id='descr'
-						name='descripción'
+						name='descripcion'
 						placeholder='Descripción'
+						autocomplete='off'
 					/>
 					<label for='descr'>
 						Descripción
@@ -35,6 +30,7 @@
 						id='cost'
 						name='costo'
 						placeholder='Precio costo'
+						autocomplete='off'
 					/>
 					<label for='cost'>
 						Precio costo
